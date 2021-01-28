@@ -1,0 +1,10 @@
+h1{
+  color: red;
+}
+
+body{
+  background: linear-gradient(hsl(210, 100%, 56%), aliceblue);
+  background-repeat: no-repeat;
+  height: 100vh;
+
+}

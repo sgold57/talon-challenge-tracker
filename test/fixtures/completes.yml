@@ -1,0 +1,9 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  skier: one
+  trail: one
+
+two:
+  skier: two
+  trail: two
