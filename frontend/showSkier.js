@@ -37,7 +37,10 @@ fetch("http://localhost:3000/completes")
     notSkied(trailArray, skiedArray)
     const completionPercentDiv = document.getElementById("completion-percent-div")
     const percentDone = (skiedArray.length/14)
-    completionPercentDiv.innerHTML = `You have completed ${skiedArray.length} of ${trailArray.length} trails: <br> That is ${percentDone * 100}%.`
+    completionPercentDiv.innerHTML = `You have completed ${skiedArray.length} of ${trailArray.length} trails: <br> That is ${(percentDone * 100).toFixed(2)}%.<br>`
+    if (percentDone < 25){
+      
+    }
   })
   
   function notSkied(array1, array2){
