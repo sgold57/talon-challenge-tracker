@@ -38,8 +38,16 @@ fetch("http://localhost:3000/completes")
     const completionPercentDiv = document.getElementById("completion-percent-div")
     const percentDone = (skiedArray.length/14)
     completionPercentDiv.innerHTML = `You have completed ${skiedArray.length} of ${trailArray.length} trails: <br> That is ${(percentDone * 100).toFixed(2)}%.<br>`
-      
+    if((percentDone*100) < 25){
+      completionPercentDiv.append("Pathetic...I just baby birded in my mouth.")
+    } else if (25 <= (percentDone*100) < 50){
+      completionPercentDiv.append("Not even halfway...back to ski school, punk.")
+    } else if (50 <= (percentDone*100) < 100){
+      completionPercentDiv.append("Now we're cruising... but can you close?")
+    } else {
+      completionPercentDiv.append("YOU HAVE DEFEATED THE FLOCK! Congratulations.")
     }
+
   })
   
   function notSkied(array1, array2){
