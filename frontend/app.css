@@ -3,8 +3,61 @@ h1{
 }
 
 body{
-  background: linear-gradient(hsl(210, 100%, 56%), aliceblue);
+  background: linear-gradient(hsl(210, 100%, 56%), lightskyblue);
   background-repeat: no-repeat;
-  height: 100vh;
+  height: 300vh;
+}
+@font-face {
+  font-family: RoyalFighter;
+  src: url("./fonts/RoyalFighter-vm3DZ.otf") format("opentype");
+}
 
+@font-face {
+  font-family: SFComicScript;
+  src: url("./fonts/SFComicScript.ttf") format("truetype")
+}
+
+#app-header{
+  box-sizing: border-box;
+  display: flex;
+  padding: 16px;
+  font-style: oblique 20deg 50deg; 
+  font-family: RoyalFighter;
+  text-align: center;
+  font-size: 96px;
+  justify-content: space-evenly;
+  align-items: flex-end;
+}
+
+#challenge-image{
+  display: flex;
+  justify-content: center;
+  background-clip: border-box;
+  padding: 15px;
+}
+
+.ca-caw{
+  font-family: RoyalFighter;
+  font-size: 64px;
+  text-align: center;
+}
+
+.challenge-description{
+  font-family: RoyalFighter;
+  font-size: 48px;
+  text-align: center;
+  padding: 16px;
+  margin: 25px 25px 25px 25px;
+}
+
+.talons-pic{
+  mix-blend-mode: multiply;
+}
+
+#eagle-vid-div, iframe {
+  display:block;
+  width: 500px;
+  height: 425px;
+  margin: 0 auto;
+  
 }
