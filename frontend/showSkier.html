@@ -10,21 +10,23 @@
 <body>
   <h1 id="skier-welcome"></h1>
 
-  <h2 id="skied-header">Trails Skiied</h2>
+  <h2 class="skied-header">Trails Skied</h2>
 
   <ul id="skied-list"></ul>
 
-  <div id="completion-percent-div">TEST</div>
+  <div id="completion-percent-div"></div>
 
-  <br><br><br><br><br><br><br><br><br><br><br><br>
+  <h2 class="skied-header">Trails That Need To Be Skied</h2>
 
-  <ul id="not-yet">TRAILS YET TO BE SKIED</ul>
+  <ul id="not-yet"></ul>
 
-  <form action="http://localhost:3000/completes" method = "POST">
-    <label for="trail-field">Which run have you skiied?</label>
-    <select name="trail_id" id="trail-field"></select>
-    <input type="submit" value="I Shredded That Bird!">
-  </form>
+  <div id="new-trail">
+    <form action="http://localhost:3000/completes" method = "POST">
+      <label id="create-form" for="trail-field">Oh word? You conquered another? Which one?</label>
+      <select name="trail_id" id="trail-field"></select>
+      <input style="size: 100;" id="trail-submit" type="submit" value="I Shredded That Bird!">
+    </form>
+  </div>
   
 </body>
 </html>

@@ -50,7 +50,7 @@ a:visited{
   align-items: flex-end;
 }
 
-#skied-header{
+.skied-header{
   box-sizing: border-box;
   display: flex;
   padding: 4px;
@@ -119,13 +119,20 @@ input{
   font-size: 2rem;
 }
 
-#skied-list{
+#skied-list, #not-yet{
   display: flex;
   border: 3px solid black;
   padding: 10px;
   flex-wrap: wrap;
   list-style: none;
   justify-content: space-evenly;
+}
+
+#not-yet li{
+  color: black;
+  padding: 20px 20px 20px 20px;
+  font-family: SFComicScript;
+  font-size: 3rem;
 }
 
 #skied-list img{
@@ -140,7 +147,6 @@ input{
 }
 
 #completion-percent-div{
-  box-sizing: border-box;
   display: flex;
   padding: 36px;
   font-style: oblique 20deg 50deg; 
@@ -151,5 +157,21 @@ input{
   align-items: flex-end;
 }
 
+#create-form{
+  display: flex;
+  padding: 36px;
+  font-style: oblique 20deg 50deg; 
+  font-family: RoyalFighter;
+  text-align: center;
+  font-size: 48px;
+  justify-content: space-evenly;
+  align-items: flex-end;
+}
+
+#new-trail{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-end;
+}
 
 
