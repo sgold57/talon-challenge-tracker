@@ -8,13 +8,23 @@
   <link rel="stylesheet" href="app.css">
 </head>
 <body>
-  <h1>HERE WE ARE THE SHOW PAGE</h1>
+  <h1 id="skier-welcome"></h1>
 
-  <ul id="skied-list">TRAILS SKIED</ul>
+  <h2 id="skied-header">Trails Skiied</h2>
+
+  <ul id="skied-list"></ul>
+
+  <div id="completion-percent-div">TEST</div>
 
   <br><br><br><br><br><br><br><br><br><br><br><br>
 
   <ul id="not-yet">TRAILS YET TO BE SKIED</ul>
+
+  <form action="http://localhost:3000/completes" method = "POST">
+    <label for="trail-field">Which run have you skiied?</label>
+    <select name="trail_id" id="trail-field"></select>
+    <input type="submit" value="I Shredded That Bird!">
+  </form>
   
 </body>
 </html>

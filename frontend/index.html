@@ -8,17 +8,40 @@
   <link rel="stylesheet" href="app.css">
 </head>
 <body>
-  <h1>LETS DO THIS</h1>
-
-  <!-- <div id="login-div">
-    <form action= "http://localhost:3000/skiers" method = "GET">
+  <header id="app-header"><img class="talons-pic" src="./images/download.png">TALONS CHALLENGE TRACKER<img class="talons-pic" src="./images/download.png"></header>
+  <div id="challenge-image"><img style="border: 0.5px solid black;" src="./images/trail_map.jpg"></div>
+  
+  <div id="eagle-vid-div">
+    <iframe id="eagle-vid" width="500" height="400" src="https://www.youtube.com/embed/33DWqRyAAUw"></iframe>
+  </div>
+    <p class="ca-caw">Ca-caw! Ca-caw!</p>
+    <iframe width="420" height="315" src="https://www.youtube.com/embed/7LmrkCGezTU"></iframe>
+  
+  
+  
+  <p class= "challenge-description">Are you prepared to take on the challenge and face the birds of prey?</p>
+  
+  <h2 style="text-align: center;">Sign up here!</h2>
+  
+  <div id="sign-up-div">
+    <form action= "http://localhost:3000/skiers" method = "POST">
       <label for="name-field">Name: </label>
-      <input id="name-field" size="30" type="text" placeholder="Enter Name (Case Sensitive)" name = "name">
+      <input id="name-field" size="30" type="text" placeholder="Enter Name" name = "name">
+      <br>
       <label for="password-field">Password: </label>
       <input id="password-field" size="30" type="text" placeholder="Enter Password" name="password">
-      <input type="submit" value="Let's Shred These Birds!">
+      <br>
+      <input type="submit" value="Let's Fly!">
     </form>
-  </div> -->
-  <ul id="skier-list">Skiers Who've Used Our Services</ul>
+  </div> 
+  
+  <p class= "challenge-description">Join those who yearn to conquer the most formidable and fearsome of flying foes.</p>
+  <ul id="skier-list"></ul>
+  <p class= "challenge-description">Can you handle all 14 runs?</p>
+
+
+
+
+
 </body>
 </html>

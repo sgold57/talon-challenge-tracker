@@ -1,10 +1,155 @@
-h1{
-  color: red;
+*{
+  box-sizing:border-box;
 }
 
 body{
-  background: linear-gradient(hsl(210, 100%, 56%), aliceblue);
-  background-repeat: no-repeat;
-  height: 100vh;
-
+  background: linear-gradient(hsl(210, 100%, 56%), lightyellow);
+  background-repeat: space;
+  
 }
+
+a:link {
+  color: firebrick;
+}
+
+a:visited{
+  color: firebrick;
+}
+
+@font-face {
+  font-family: RoyalFighter;
+  src: url("./fonts/RoyalFighter-vm3DZ.otf") format("opentype");
+}
+
+@font-face {
+  font-family: SFComicScript;
+  src: url("./fonts/SFComicScript.ttf") format("truetype")
+}
+
+#app-header{
+  box-sizing: border-box;
+  display: flex;
+  padding: 16px;
+  font-style: oblique 20deg 50deg; 
+  font-family: RoyalFighter;
+  text-align: center;
+  font-size: 96px;
+  justify-content: space-evenly;
+  align-items: flex-end;
+}
+
+#skier-welcome{
+  box-sizing: border-box;
+  display: flex;
+  padding: 8px;
+  font-style: oblique 20deg 50deg; 
+  font-family: RoyalFighter;
+  text-align: center;
+  font-size: 72px;
+  justify-content: space-evenly;
+  align-items: flex-end;
+}
+
+#skied-header{
+  box-sizing: border-box;
+  display: flex;
+  padding: 4px;
+  font-style: oblique 20deg 50deg; 
+  font-family: RoyalFighter;
+  font-size: 54px;
+  justify-content: center; 
+}
+
+#challenge-image{
+  display: flex;
+  justify-content: center;
+  background-clip: border-box;
+  padding: 15px;
+}
+
+.ca-caw{
+  font-family: RoyalFighter;
+  font-size: 64px;
+  text-align: center;
+}
+
+.challenge-description{
+  font-family: RoyalFighter;
+  font-size: 48px;
+  text-align: center;
+  padding: 16px;
+  margin: 25px 25px 25px 25px;
+}
+
+.talons-pic{
+  mix-blend-mode: multiply;
+}
+
+#eagle-vid-div, iframe {
+  display:block;
+  width: 500px;
+  height: 425px;
+  margin: 0 auto;
+}
+
+#sign-up-div{
+  display: flex;
+  justify-content: center;
+}
+
+input{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px solid black;
+}
+
+#skier-list{
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+#skier-list li{
+  color: black;
+  padding: 20px 20px 20px 20px;
+  font-family: SFComicScript;
+  font-size: 2rem;
+}
+
+#skied-list{
+  display: flex;
+  border: 3px solid black;
+  padding: 10px;
+  flex-wrap: wrap;
+  list-style: none;
+  justify-content: space-evenly;
+}
+
+#skied-list img{
+  width: auto;
+  height: 150px;
+}
+
+#skied-list li{
+  text-align: center;
+  font-family: SFComicScript;
+  font-size: 20px; 
+}
+
+#completion-percent-div{
+  box-sizing: border-box;
+  display: flex;
+  padding: 36px;
+  font-style: oblique 20deg 50deg; 
+  font-family: RoyalFighter;
+  text-align: center;
+  font-size: 54px;
+  justify-content: space-evenly;
+  align-items: flex-end;
+}
+
+
+
